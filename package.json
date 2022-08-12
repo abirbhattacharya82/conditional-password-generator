@@ -1,0 +1,22 @@
+{
+  "name": "safe-password",
+  "version": "1.0.0",
+  "description": "generate safe passwords of a minimum of 4 length",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abirbhattacharya82/SafePassword.git"
+  },
+  "keywords": [
+    "passwords"
+  ],
+  "author": "abir82",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abirbhattacharya82/SafePassword/issues"
+  },
+  "homepage": "https://github.com/abirbhattacharya82/SafePassword#readme"
+}
