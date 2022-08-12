@@ -30,6 +30,7 @@ function main(n)
             {
                 s+=z.charAt(Math.floor(Math.random()*z.length));
             }
+            i++;
         }
         return s;
     }
