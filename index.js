@@ -38,4 +38,4 @@ function main(chars,cap,small,numbers)
     return z;
 }
 
-main(1,2,3,4);
+module.exports=main;
