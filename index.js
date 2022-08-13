@@ -1,39 +1,41 @@
-function main(n)
+function jumble(s)
 {
-    var w="+/()*&^%$#@!~`?><|}{][";
-    var x="ABCDEFGHIJKLMNOPQRTSUVWXYZ";
-    var y="abcdefghijklmnopqrtsuvwxyz";
-    var z="0123456789";    
-    if(n<4)
+    var z="";
+    while(s.length > 0)
     {
-        return "uD0n'tD3s3rV3P@ssuu0rD";
+        var index = Math.floor(Math.random() * s.length);
+        var c = s.charAt(index);
+        z =z+ s.charAt(index);
+        s=s.substring(0, index) + s.substring(index + 1);
     }
-    else
+    return z;
+}
+function main(chars,cap,small,numbers)
+{
+    var x="!@#$%^&*()_+=-[]{}|;':,./<>?`~";
+    var y="abcdefghijklmnopqrstuvwxyz";
+    var z="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    var w="0123456789";
+
+    var s="";
+    for(var i=0;i<chars;i++)
     {
-        var s="";
-        var i=0;
-        while(i<n)
-        {
-            if(i%4==0)
-            {
-                s+=w.charAt(Math.floor(Math.random()*w.length));
-            }
-            else if(i%3==0)
-            {
-                s+=x.charAt(Math.floor(Math.random()*x.length));
-            }
-            else if(i%2==0)
-            {
-                s+=y.charAt(Math.floor(Math.random()*y.length));
-            }
-            else
-            {
-                s+=z.charAt(Math.floor(Math.random()*z.length));
-            }
-            i++;
-        }
-        return s;
+        s+=x.charAt(Math.floor(Math.random()*x.length));
     }
+    for(var i=0;i<cap;i++)
+    {
+        s+=y.charAt(Math.floor(Math.random()*y.length));
+    }
+    for(var i=0;i<small;i++)
+    {
+        s+=z.charAt(Math.floor(Math.random()*z.length));
+    }
+    for(var i=0;i<numbers;i++)
+    {
+        s+=w.charAt(Math.floor(Math.random()*w.length));
+    }
+    var z=jumble(s);
+    return z;
 }
 
-module.exports = main;
+main(1,2,3,4);
