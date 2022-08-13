@@ -21,6 +21,17 @@ The following snippet generates a password containing only capital letters, smal
 const generate_password=require('conditional-password-generator');
 console.log(generate_password(0,x,y,z));
 ```
+General Format
+```
+numbers-----------------|
+small letters---------| |
+capital letters-----| | |
+characters--------| | | |
+                  | | | |
+                  | | | |
+generate_password(w,x,y,z);
+```
+
 
 # How it works
 For generate_password(w,x,y,z)
