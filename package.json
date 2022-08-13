@@ -1,0 +1,26 @@
+{
+  "name": "conditional-password-generator",
+  "version": "1.0.0",
+  "description": "generating passwords with a given condition",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abirbhattacharya82/conditional-password-generator.git"
+  },
+  "keywords": [
+    "password",
+    "conditional-password",
+    "password with conditions",
+    "password generator",
+    "random password generator"
+  ],
+  "author": "abir82",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abirbhattacharya82/conditional-password-generator/issues"
+  },
+  "homepage": "https://github.com/abirbhattacharya82/conditional-password-generator#readme"
+}
